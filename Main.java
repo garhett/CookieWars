@@ -37,11 +37,11 @@ class Main {
             numArray[i] *= 3; // multiply by 3
             numArray[i] += 3; // add 3
             numArray[i] *= 3; // multiply by 3 again
-						int tempfinalNum = numArray[i];
+            int tempFinalNum = numArray[i];
             int sum = sumOfDigits(numArray[i]); // add the digits together
 
-            System.out.println("Number " + tempNum + " equates to " + tempfinalNum 
-															 + ", which added together makes " + sum + ". This equals " + numToCookie(sum) + ".");
+            System.out.println("Number " + tempNum + " equates to " + tempFinalNum
+                    + ", which added together makes " + sum + ". This equals " + numToCookie(sum) + ".");
         }
     }
 
@@ -76,7 +76,8 @@ class Main {
                 return "Dirty Dough";
             case 10:
                 return "Little Debbie";
+            default:
+                return "N/A";
         }
-        return "N/A";
     }
 }
