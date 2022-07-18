@@ -1,3 +1,32 @@
+/*
+by PETE LARKIN
+
+"
+Remember these from back in the random email forwarding days? 😂 (#CookieWars edition)
+
+1) Pick your favorite number between 1-9
+2) Multiply by 3
+3) Add 3
+4) Multiply by 3 again (You'll get a 2 or 3 digit number)
+5) Add the digits together
+
+With that number, see who makes the best cookie from the list below:
+
+1. Your mom
+2. My mom
+3. Crumbl
+4. Twisted Sugar
+5. Grandma’s (vending machine kind)
+6. Crave
+7. Walmart
+8. Levi Lindsay 💭
+9. Dirty Dough
+10. Little Debbie
+"
+
+https://www.linkedin.com/posts/peteralarkin_cookiewars-activity-6954525462115057664---UJ?utm_source=linkedin_share&utm_medium=member_desktop_web
+ */
+
 class Main {
     public static void main(String[] args) {
         int[] numArray = {1, 2, 3, 4, 5, 6, 7, 8, 9};
@@ -8,9 +37,11 @@ class Main {
             numArray[i] *= 3; // multiply by 3
             numArray[i] += 3; // add 3
             numArray[i] *= 3; // multiply by 3 again
+						int tempfinalNum = numArray[i];
             int sum = sumOfDigits(numArray[i]); // add the digits together
 
-            System.out.println("Number " + tempNum + " equates to " + sum + ", which equals cookie: " + numToCookie(sum) + ".");
+            System.out.println("Number " + tempNum + " equates to " + tempfinalNum 
+															 + ", which added together makes " + sum + ". This equals " + numToCookie(sum) + ".");
         }
     }
 
@@ -18,7 +49,7 @@ class Main {
         int sum = 0;
         while (num != 0) {
             sum = sum + num % 10;
-            num = num / 10;
+            num /= 10;
         }
         return sum;
     }
@@ -49,32 +80,3 @@ class Main {
         return "N/A";
     }
 }
-
-/*
-by PETE LARKIN
-
-"
-Remember these from back in the random email forwarding days? 😂 (#CookieWars edition)
-
-1) Pick your favorite number between 1-9
-2) Multiply by 3
-3) Add 3
-4) Multiply by 3 again (You'll get a 2 or 3 digit number)
-5) Add the digits together
-
-With that number, see who makes the best cookie from the list below:
-
-1. Your mom
-2. My mom
-3. Crumbl
-4. Twisted Sugar
-5. Grandma’s (vending machine kind)
-6. Crave
-7. Walmart
-8. Levi Lindsay 💭
-9. Dirty Dough
-10. Little Debbie
-"
-
-https://www.linkedin.com/posts/peteralarkin_cookiewars-activity-6954525462115057664---UJ?utm_source=linkedin_share&utm_medium=member_desktop_web
- */
