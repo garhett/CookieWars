@@ -53,9 +53,7 @@ class Main {
     }
 
     static boolean doesAllMatch(ArrayList<Integer> ArrayList) {
-        return ArrayList.stream()
-                .distinct()
-                .count() <= 1;
+        return ArrayList.stream().distinct().count() <= 1;
     }
 
     static int sumOfDigits(int num) {
