@@ -33,12 +33,11 @@ class Main {
 
         for (int i = 0; i < numArray.length; i++) {
             int tempNum = numArray[i];
-
             numArray[i] *= 3; // multiply by 3
             numArray[i] += 3; // add 3
             numArray[i] *= 3; // multiply by 3 again
-            int tempFinalNum = numArray[i];
             int sum = sumOfDigits(numArray[i]); // add the digits together
+            int tempFinalNum = numArray[i];
 
             System.out.println("Number " + tempNum + " equates to " + tempFinalNum
                     + ", which added together makes " + sum + ". This equals " + numToCookie(sum) + ".");
